@@ -1,0 +1,50 @@
+<!-- <form>
+    <div class="bg">
+        <div class="container">
+            
+            <input type="text" placeholder="Search...">
+            <div class="search"></div>
+            <section class="search-results"></section>
+            <app-movie></app-movie>
+        </div>
+    </div>
+</form> -->
+<body>
+    <div class="bg">
+        <form #f="ngForm" (ngSubmit) ="save(f.value)">
+            <input #title="ngModel"  ngModel  name="title" id="title" type="text" placeholder="Search Here..." class="form-control" required>
+            <div class="demo">
+                <button type="submit" class="btn btn-primary">
+                <img src="/assets/images/OIP.png" width="25" height="25" alt="">
+                </button>  
+            </div>                
+        </form>
+    </div>
+        <!-- <div class="card-group col">
+        <ng-container  *ngFor="let m of flight ; let i=index">
+            <div>
+                <div class="card" style="width: 12rem; ">
+                    <img [src]="m.Poster" class="card-img-top" >
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">{{m.Title}}</h5>
+                            <h5 class="card-text">{{m.Year }}</h5>
+                        </div>
+                        <button class="w3-button w3-black w3-round-xlarge" (click)="toggleOn =!toggleOn">Show More
+                        
+                        </button>
+                        <div *ngIf="!toggleOn; else elseBlock"></div>
+                            
+                            <ng-template #elseBlock><div class="xyz"><h6 class="card-text">IMDB ID: {{m.imdbID}}</h6><h6 class="card-text">Type: {{m.Type}}</h6></div></ng-template>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div *ngIf="(i+1)%4 ===0" class="w-100"></div>
+            <div *ngIf="(i+1)%4 ===0" style="margin-top: 30px;"></div>
+        </ng-container> 
+        </div> -->
+
+        
+</body>

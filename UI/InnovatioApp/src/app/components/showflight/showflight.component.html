@@ -1,0 +1,10 @@
+<div class="bg">
+    <form #f="ngForm" (ngSubmit) ="show(f.value)">
+        <input #title="ngModel"  ngModel  name="title" id="title" type="text" placeholder="Search Here..." class="form-control" required>
+        <div class="demo">
+            <button type="submit" class="btn btn-primary">
+            <img src="/assets/images/OIP.png" width="25" height="25" alt="">
+            </button>  
+        </div>                
+    </form>
+</div>
